@@ -157,7 +157,7 @@ update_cart();
 <body>
     <!-- navbar -->
     <nav class="navbar">
-        <img src="./images/ML.jpg" alt="Logo" class="logo" style="width: 7%;">
+        <img src="./images/BewRi Coffee.png" alt="Logo" class="logo" style="width: 7%;">
         <a href="index.php">Trang chủ</a>
         <a href="display_all.php">Sản phẩm</a>
         <a href="./users_area/user_register.php">Đăng ký</a>

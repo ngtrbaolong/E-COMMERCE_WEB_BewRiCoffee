@@ -53,7 +53,7 @@ if (!isset($_SESSION['username'])) {
     <!-- header -->
 
     <section class="header">
-        <a href="#" class="logo"> <i class="fas fa-chair"></i> MongLinhStore</a>
+        <a href="#" class="logo"> <i class="fas fa-chair"></i>BewRi Coffee</a>
 
         <nav class="navbar">
             <a href="../index.php">Trang Chủ</a>
@@ -94,12 +94,12 @@ if (!isset($_SESSION['username'])) {
     <section class="credit">
         <div class="credit-left">
             <h3>Thông Tin Liên Hệ</h3>
-            <p>Email: 2251120428@ut.edu.vn (Minh)</p>
-            <p>Email: 2251120305@ut.edu.vn (Long)</p>
+            <p>Thương Mại Điện Tử</p>
+            <p>Nhóm 1</p>
         </div>
         <div class="credit-right">
             <h3>Copyright</h3>
-            <p>&copy; 2024 MongLingStore. All Rights Reserved.</p>
+            <p>&copy; BewRi Coffee. All Rights Reserved.</p>
             <p>Địa chỉ: 70 Tô Ký, Phường Tân Chánh Hiệp, quận 12, TP.HCM</p>
         </div>
     </section>

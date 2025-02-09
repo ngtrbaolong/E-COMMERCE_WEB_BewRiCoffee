@@ -55,7 +55,7 @@
     date_default_timezone_set('Asia/Ho_Chi_Minh');
     
     $vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-    $vnp_Returnurl = "http://localhost/Ecommerce%20Web%20-%20Copy/users_area/thankyou.php";
+    $vnp_Returnurl = "http://localhost/BewRi%20Coffee/users_area/thankyou.php";
     $vnp_TmnCode = "QCV5CZ7W";
     $vnp_HashSecret = "WRZAJTBSGTFFFJPGKK34YXKGRQ9MLOWV"; //Chuỗi bí mật
     //Expire
