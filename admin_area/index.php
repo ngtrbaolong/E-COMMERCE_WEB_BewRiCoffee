@@ -62,7 +62,7 @@ session_start();
         <!-- first child -->
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <div class="container-fluid">
-                <img src="../images/ML.jpg" alt="" class="logo">
+                <img src="../images/BewRi Coffee.png" alt="" class="logo">
                 <nav class="navbar navbar-expand-lg">
                     <ul class="navbar-nav">
                         <li class="nav-item">
