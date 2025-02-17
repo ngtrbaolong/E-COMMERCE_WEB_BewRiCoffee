@@ -122,7 +122,7 @@ session_start();
 
         <!-- third chile -->
         <div class="bg-light my-3">
-            <h3 class="text-center">Mong Linh Store</h3>
+            <h3 class="text-center">BewRiCoffee</h3>
             <p class="text-center">Lắng Nghe - Kiên Trì - Đổi Mới</p>
         </div>
 

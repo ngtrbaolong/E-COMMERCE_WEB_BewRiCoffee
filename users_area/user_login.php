@@ -55,18 +55,26 @@ include('../functions/common_function.php');
 
 <?php
 if(isset($_POST['user_login'])){
-    $user_username=$_POST['user_username'];
-    $user_password=$_POST['user_password'];
-    $select_query="SELECT * FROM `user_table` where username='$user_username'";
-    $result=mysqli_query($con,$select_query);
-    $row_count=mysqli_num_rows($result);
-    $row_data=mysqli_fetch_assoc($result);
-    $user_ip=getIPAddress();
+    $user_username = trim($_POST['user_username']);
+    $user_password = trim($_POST['user_password']);
+    $user_ip = getIPAddress();
 
-    //gio hang
-    $select_query_cart="SELECT * FROM `cart_details` where ip_address='$user_ip'";
-    $select_cart=mysqli_query($con,$select_query_cart);
-    $row_count_cart=mysqli_num_rows($select_cart);
+    // Sử dụng Prepared Statement để chống SQL Injection
+    $stmt = $con->prepare("SELECT * FROM `user_table` WHERE username = ?");
+    $stmt->bind_param("s", $user_username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $row_count = $result->num_rows;
+    $row_data = $result->fetch_assoc();
+    $stmt->close();
+
+    // Kiểm tra giỏ hàng
+    $stmt_cart = $con->prepare("SELECT * FROM `cart_details` WHERE ip_address = ?");
+    $stmt_cart->bind_param("s", $user_ip);
+    $stmt_cart->execute();
+    $result_cart = $stmt_cart->get_result();
+    $row_count_cart = $result_cart->num_rows;
+    $stmt_cart->close();
 
     if($row_count>0){
         $_SESSION['username']=$user_username;

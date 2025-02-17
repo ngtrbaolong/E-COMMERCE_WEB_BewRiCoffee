@@ -116,7 +116,7 @@ if(isset($_SESSION['username'])){
         <div class="row">
 
             <div class="image">
-                <img src="images/contact.png" alt="">
+                <img src="./images/service-3.png" alt="">
             </div>
 
             <form action="">

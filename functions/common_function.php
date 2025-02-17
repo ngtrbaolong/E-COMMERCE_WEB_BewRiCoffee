@@ -10,7 +10,7 @@ function getproducts(){
   //condition to check or not
   if(!isset($_GET['category'])){
       if(!isset($_GET['brand'])){
-          $select_query="SELECT * FROM `products` WHERE status = 'true' order by rand() limit 0,4";
+          $select_query="SELECT * FROM `products` WHERE status = 'true' order by rand() limit 0,12";
           $result_query=mysqli_query($con,$select_query);
           
           while($row=mysqli_fetch_assoc($result_query)){
